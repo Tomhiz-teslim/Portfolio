@@ -728,7 +728,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0px;
+        gap: 70px;
         color: #DFFFFD;
         font-size: 1em;
         margin-bottom:50px;
