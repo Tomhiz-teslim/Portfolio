@@ -753,7 +753,7 @@ footer {
         font-size: 0.9em;
         text-align: center;
     }
-    article section .testimonialsCont{
+   article section .testimonialsCont{
        
         width: 85%;
         height: 30em;
@@ -762,8 +762,8 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 50px;
-        border: 1px solid #485341;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px none;
+        box-shadow: none;
         margin-top: 20px;
     }
     article section .testimonialsCont .testimonial{
