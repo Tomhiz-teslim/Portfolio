@@ -474,6 +474,7 @@ footer {
         justify-content: space-evenly;
         padding-top: 7px;
         display: none;
+
     }
     header .name{
         width: 450px;
@@ -753,7 +754,7 @@ footer {
         font-size: 0.9em;
         text-align: center;
     }
-   article section .testimonialsCont{
+    article section .testimonialsCont{
        
         width: 85%;
         height: 30em;
@@ -955,4 +956,464 @@ footer {
         margin-left: 5%;
     }
     
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --backcol: #555D50;
+    }
+    
+    body{
+        background-color: var(--backcol);
+    }
+    
+    
+    header{
+     
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 4px;
+      }
+    header .name{
+        width: 230px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        border: 1px solid;
+        display: none;
+    }
+    header .name h1{
+        font-size: 1.2em;
+        /* font-family: 'Montserrat', sans-serif; */
+        color: #fff;
+        /* color: #20B2AA; */
+        font-weight: 100;
+    }
+    
+    header nav{
+        height: 100%;
+        width: 100%;
+    }
+    
+    header nav ul{
+        border: 1px solid #485341;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        
+    }
+    
+    header nav ul li, a{
+        text-decoration: none;
+        /* color: #20B2AA; */
+        color: #7FFFD4;
+        font-size: 1em;
+        font-weight: 900;
+    }
+    
+    main {
+        margin-top: 30px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    main .mainCont {
+        height: 80%;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    main .mainCont .imgCont{
+        border: 1px solid #DFFFFD;
+        width: 35%;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    main .mainCont .imgCont img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    main .mainCont .intro{
+        border: 1px solid #626e5b;
+        padding: 10px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        width: 60%;
+    }
+    main .mainCont  .prof{
+        display: none;
+    }
+    main .mainCont .intro p{
+        text-align: center;
+        font-size: 0.7em;
+        color: #DFFFFD;
+    }
+    
+    main .mainCont .intro h1{
+        font-size: 1.9em;
+        color: #7FFFD4;
+        text-align: center;
+        width: 100%;
+    }
+    
+    main .mainCont .intro h3{
+        font-size: 1em;
+        text-align: center;
+        color: #DFFFFD;
+        font-weight: 100;
+    }
+    main .mainCont .intro .buttons{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    main .mainCont .intro .buttons .A{
+        width: 80px;
+        padding: 5px;
+        border-radius: 7px;
+        background-color: transparent;
+        border: 1px solid #7FFFD4;
+    }
+    main .mainCont .intro .buttons .B{
+        width: 80px;
+        padding: 5px;
+        border-radius: 7px;
+        background-color: #7FFFD4;
+        border: none;
+        
+    }
+    main .mainCont .intro .buttons .A a{
+        text-decoration: none;
+    }
+    main .mainCont .intro .buttons .B a{
+        color: var(--backcol);
+    }
+    
+    main .mainCont .intro .socials{
+        border: #56644d 2px solid;
+        width: 80%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    /* Example of icon styling */
+    main .mainCont .intro .socials a i {
+        font-size: 24px;
+        color:#DFFFFD; /* Change to match your design */
+    }
+    
+    main .mainCont .intro .socials a i:hover {
+        color: #7FFFD4; /* Hover effect, e.g., change color */
+    }
+    
+    article{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article .about{
+        width: 80%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+    }
+    article .about .get{
+        color: #DFFFFD;
+        font-size: 0.9em;
+    }
+    article .about h1{
+        font-size: 1.8rem;
+        color: #7FFFD4;
+    }
+    article .about .text{
+        color: #DFFFFD;
+        font-size: 0.9;
+        text-align: start;
+    }
+    article section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    article section .skillsCont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 30px;
+        padding: 5px;
+    
+    }
+    article section h2{
+        font-size: 1.8em;
+        color: #DFFFFD;
+    }
+    article section p{
+        font-size: 0.9em;
+        color: #DFFFFD;
+    }
+    article section .skillsCont .skill{
+        width: 250px;
+        height: 200px;
+        border: 1px solid #626e5b;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: #DFFFFD;
+        font-size: 1em;
+    }
+    article section .skillsCont .skill i{
+        color: #7FFFD4;
+    }
+    article section .skillsCont .skill p{
+        font-size: 1em;
+    }
+    article section .skillsCont .skill i:hover{
+        color: #DFFFFD;
+    }
+    
+    article section .test{
+        color: #7FFFD4;
+    }
+    
+    article section .testimonialsCont{
+       
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin-top: 50px;
+    }
+    article section .testimonialsCont .testimonial{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+       
+    }
+    article section .testimonialsCont .testimonial img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    article .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    }
+    
+    article .modal img {
+        margin: auto;
+        display: block;
+        width: 80%; /* Width of the image */
+        max-width: 600px; /* Maximum width */
+        border-radius: 10px; /* Rounded corners */
+        margin-top: 100px;
+    }
+    
+    article .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .chat-box {
+        background-color: transparent;
+        border: 1px solid #626e5b;
+        border-radius: 5px;
+        padding: 0px;
+        width: 80%;
+        height: 400px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    form{
+        width: 90%;
+        height: 100;
+    }
+    
+    .chat-box h2 {
+        margin-top: 0;
+    }
+    
+    .chat-box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .chat-box input, .chat-box textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+    }
+    
+    .chat-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333b2e;
+        color: #DFFFFD;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    
+    .fixed-icons {
+        position: fixed;
+        bottom: 20px; /* Distance from the bottom of the screen */
+        right: 20px; /* Distance from the right side of the screen */
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between icons */
+        z-index: 1000; /* Ensure icons are on top of other elements */
+    }
+    
+    .fixed-icons .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333; /* Dark background for visibility */
+        color: #fff; /* White icon color */
+        text-decoration: none;
+        font-size: 24px; /* Icon size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    }
+    
+    .fixed-icons .icon:hover {
+        background-color: #333b2e; /* Change background color on hover */
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+    }
+    
+    
+    .fixed-icons .whatsapp {
+        background-color: #25D366; /* Green color for WhatsApp */
+    }
+    
+    footer {
+        background-color: #333b2e;/* Dark background color */
+        color: white; /* White text */
+        padding: 20px 0; /* Padding for top and bottom */
+        margin-top: 100px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around; /* Space between left and right content */
+        align-items: flex-start; /* Align items to the start */
+        max-width: 100%; /* Max width of the footer */
+        margin: 0 auto; /* Center the footer */
+        padding: 0 10px; /* Padding on left and right */
+    }
+    
+    .footer-content,
+    .footer-social {
+        width: 50%; /* Set width for content sections */
+    }
+    
+    .footer-social ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footer-social li {
+        margin: 10px 0; /* Space between list items */
+    }
+    
+    .footer-social a, i {
+        color: #DFFFFD; /* White text for links */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 20px;
+    }
+    
+    .footer-social a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .location{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center; /* Center text */
+        padding-top: 10px; /* Padding on top */
+    }
+   
 }
