@@ -116,19 +116,22 @@
         <section id="contact">
             <div class="chat-box">
                 <h2>Send me a message</h2>
-                <form id="chatForm" action="mailto:tomhizb12@gmail.com" method="post" enctype="text/plain">
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="userName">Name:</label>
-                    <input type="text" id="userName" name="userName" required>
-                    
-                    <label for="userMessage">Message:</label>
-                    <textarea id="userMessage" name="userMessage" rows="5" required></textarea>
-                    
-                    <button type="submit">Send</button>
-                </form>
+               <!-- Modify this form HTML and place it wherever you want your form -->
+                    <form action="https://formspree.io/f/mbljlqle" method="POST">
+                        <label for="email">
+                            Your email:
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </label>
+                        <br>
+                        <label for="message">
+                            Your message:
+                            <textarea name="message" placeholder="Enter your message" required></textarea>
+                        </label>
+                        <br>
+                        <!-- Your other form fields can go here -->
+                        <button type="submit">Send</button>
+                    </form>
+
             </div>
         </section>
     </article>
