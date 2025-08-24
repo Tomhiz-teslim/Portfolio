@@ -1690,9 +1690,9 @@ footer {
     }
     main .mainCont .imgCont img{
         height: 100%;
-        width: 95%;
+        width: 100%;
         border-radius: 0px;
-        margin-left: 2.5%;
+        margin-left: 0;
     }
 
     
