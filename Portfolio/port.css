@@ -1,0 +1,2148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backcol: #555D50;
+}
+
+body{
+    background-color: var(--backcol);
+}
+
+
+header{
+ 
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 7px;
+}
+header .name{
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+header .name h1{
+    font-size: 2em;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #DFFFFD;
+    /* color: #20B2AA; */
+    font-weight: 400;
+    font-family: "Aladin", system-ui;
+}
+
+header nav{
+    height: 100%;
+    width: 60%;
+}
+
+header nav ul{
+    border: 1px solid #485341;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    
+}
+
+header nav ul li, a{
+    text-decoration: none;
+    /* color: #20B2AA; */
+    color: #7FFFD4;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+main {
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+main .mainCont {
+    height: 80%;
+    width: 75%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .mainCont .imgCont{
+    border: 1px solid #626e5b;
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+main .mainCont .imgCont img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+main .mainCont .intro{
+    border: 1px solid #626e5b;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+main .mainCont  .prof{
+    display: none;
+}
+main .mainCont .intro p{
+    text-align: center;
+    font-size: 0.8em;
+    color: #DFFFFD;
+}
+
+main .mainCont .intro h1{
+    font-size: 2.5em;
+    color: #7FFFD4;
+    text-align: center;
+    width: 500px;
+}
+
+main .mainCont .intro h3{
+    font-size: 1.3em;
+    text-align: center;
+    color: #DFFFFD;
+    font-weight: 100;
+}
+main .mainCont .intro .buttons{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+main .mainCont .intro .buttons .A{
+    width: 120px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #7FFFD4;
+}
+main .mainCont .intro .buttons .B{
+    width: 120px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #7FFFD4;
+    border: none;
+    
+}
+main .mainCont .intro .buttons .A a{
+    text-decoration: none;
+}
+main .mainCont .intro .buttons .B a{
+    color: var(--backcol);
+}
+
+main .mainCont .intro .socials{
+    border: #56644d 2px solid;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+/* Example of icon styling */
+main .mainCont .intro .socials a i {
+    font-size: 30px;
+    color:#DFFFFD; /* Change to match your design */
+}
+
+main .mainCont .intro .socials a i:hover {
+    color: #7FFFD4; /* Hover effect, e.g., change color */
+}
+
+article{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article .about{
+    width: 60%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    border: 1px solid #485341;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+}
+article .about .get{
+    color: #DFFFFD;
+    font-size: 0.9em;
+}
+article .about h1{
+    font-size: 2.5rem;
+    color: #7FFFD4;
+}
+article .about .text{
+    color: #DFFFFD;
+    font-size: 0.9;
+    text-align: start;
+}
+article section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+article section .skillsCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 50px;
+    padding: 10px;
+
+}
+article section h2{
+    font-size: 2em;
+    color: #DFFFFD;
+}
+article section p{
+    font-size: 0.9em;
+    color: #DFFFFD;
+}
+article section .skillsCont .skill{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #626e5b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #DFFFFD;
+    font-size: 1em;
+}
+article section .skillsCont .skill i{
+    color: #7FFFD4;
+}
+article section .skillsCont .skill p{
+    font-size: 1.2em;
+}
+article section .skillsCont .skill i:hover{
+    color: #DFFFFD;
+}
+
+ .projectsCont{
+    height: 70vh;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #7FFFD4;
+}
+ 
+.projects .project1{
+    border: 2px solid #626e5b;
+    background-color: transparent;
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.projects .project1 .url{
+    text-decoration: none;
+}
+.projects .project1 .url:hover{
+    text-decoration: underline;
+}
+
+.projects .project1 .pic{
+    background-color: #fff;
+    padding: 50px;
+    height: 90%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .project1 .pic img{
+    height: 150px;
+    width: 150px;
+}
+
+.projects .project1 h4{
+    text-align: center;
+}
+
+article section .test{
+    color: #7FFFD4;
+}
+
+
+article section .testimonialsCont{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border: 1px solid #485341;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 50px;
+}
+article section .testimonialsCont .testimonial{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+   
+}
+article section .testimonialsCont .testimonial img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+article .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+}
+
+article .modal img {
+    margin: auto;
+    display: block;
+    width: 80%; /* Width of the image */
+    max-width: 600px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 100px;
+}
+
+article .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-box {
+    background-color: transparent;
+    border: 1px solid #626e5b;
+    border-radius: 5px;
+    padding: 0px;
+    width: 50%;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+form{
+    width: 90%;
+    height: 100;
+}
+
+.chat-box h2 {
+    margin-top: 0;
+}
+
+.chat-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.chat-box input, .chat-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.chat-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333b2e;
+    color: #DFFFFD;
+    border: none;
+    cursor: pointer;
+}
+.chat-box button:hover{
+    background-color: #626e5b;
+}
+
+
+.fixed-icons {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px; /* Distance from the right side of the screen */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between icons */
+    z-index: 1000; /* Ensure icons are on top of other elements */
+}
+
+.fixed-icons .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333; /* Dark background for visibility */
+    color: #fff; /* White icon color */
+    text-decoration: none;
+    font-size: 24px; /* Icon size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.fixed-icons .icon:hover {
+    background-color: #333b2e; /* Change background color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+
+.fixed-icons .whatsapp {
+    background-color: #25D366; /* Green color for WhatsApp */
+}
+
+/* #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#topBtn:hover {
+    background-color: #961515;
+} */
+
+
+footer {
+    background-color: #333b2e;/* Dark background color */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    margin-top: 100px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Space between left and right content */
+    align-items: flex-start; /* Align items to the start */
+    max-width: 1200px; /* Max width of the footer */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+.footer-content,
+.footer-social {
+    width: 45%; /* Set width for content sections */
+}
+
+.footer-social ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.footer-social a, i {
+    color: #DFFFFD; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.location{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center; /* Center text */
+    padding-top: 10px; /* Padding on top */
+}
+
+@media screen and (max-width: 1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --backcol: #555D50;
+    }
+    
+    body{
+        background-color: var(--backcol);
+    }
+    
+    
+    header{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 7px;
+    }
+    header .name{
+        width: 450px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+    header .name h1{
+        font-size: 2em;
+        /* font-family: 'Montserrat', sans-serif; */
+        color: #DFFFFD;
+        /* color: #20B2AA; */
+        font-weight: 400;
+        font-family: "Aladin", system-ui;
+    }
+    
+    header nav{
+        height: 100%;
+        width: 60%;
+    }
+    
+    header nav ul{
+        border: 1px solid #485341;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        
+    }
+    
+    header nav ul li, a{
+        text-decoration: none;
+        /* color: #20B2AA; */
+        color: #7FFFD4;
+        font-size: 1em;
+        font-weight: 900;
+    }
+    
+    main {
+        margin-top: 50px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    main .mainCont {
+        height: 80%;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    main .mainCont .imgCont{
+        border: 1px solid #626e5b;
+        width: 19em;
+        height: 20em;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    main .mainCont .imgCont img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    main .mainCont .intro{
+        border: 1px solid #626e5b;
+        padding: 15px;
+        width: 50%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    main .mainCont  .prof{
+        display: none;
+    }
+    main .mainCont .intro p{
+        text-align: center;
+        font-size: 0.8em;
+        color: #DFFFFD;
+    }
+    
+    main .mainCont .intro h1{
+        font-size: 2em;
+        color: #7FFFD4;
+        text-align: center;
+        width: 100%;
+    }
+    
+    main .mainCont .intro h3{
+        font-size: 1.3em;
+        text-align: center;
+        color: #DFFFFD;
+        font-weight: 100;
+    }
+    main .mainCont .intro .buttons{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    main .mainCont .intro .buttons .A{
+        width: 100px;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #7FFFD4;
+    }
+    main .mainCont .intro .buttons .B{
+        width: 100px;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: #7FFFD4;
+        border: none;
+        
+    }
+    main .mainCont .intro .buttons .A a{
+        text-decoration: none;
+    }
+    main .mainCont .intro .buttons .B a{
+        color: var(--backcol);
+    }
+    
+    main .mainCont .intro .socials{
+        border: #56644d 2px solid;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    /* Example of icon styling */
+    main .mainCont .intro .socials a i {
+        font-size: 30px;
+        color:#DFFFFD; /* Change to match your design */
+    }
+    
+    main .mainCont .intro .socials a i:hover {
+        color: #7FFFD4; /* Hover effect, e.g., change color */
+    }
+    
+    article{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article .about{
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+    }
+    article .about .get{
+        color: #DFFFFD;
+        font-size: 0.9em;
+    }
+    article .about h1{
+        font-size: 2.5rem;
+        color: #7FFFD4;
+    }
+    article .about .text{
+        color: #DFFFFD;
+        font-size: 0.9;
+        text-align: start;
+    }
+    article section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+    article section .skillsCont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 50px;
+        padding: 10px;
+    
+    }
+    article section h2{
+        font-size: 2em;
+        color: #DFFFFD;
+    }
+    article section p{
+        font-size: 0.9em;
+        color: #DFFFFD;
+    }
+    article section .skillsCont .skill{
+        width: 300px;
+        height: 250px;
+        border: 1px solid #626e5b;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: #DFFFFD;
+        font-size: 1em;
+    }
+    article section .skillsCont .skill i{
+        color: #7FFFD4;
+    }
+    article section .skillsCont .skill p{
+        font-size: 1.2em;
+    }
+    article section .skillsCont .skill i:hover{
+        color: #DFFFFD;
+    }
+
+    .projectsCont{
+    height: 70vh;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #7FFFD4;
+}
+ 
+.projects .project1{
+    border: 2px solid #626e5b;
+    background-color: transparent;
+    height: 85%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.projects .project1 .url{
+    text-decoration: none;
+}
+.projects .project1 .url:hover{
+    text-decoration: underline;
+}
+
+.projects .project1 .pic{
+    background-color: #fff;
+    padding: 40px;
+    height: 80%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .project1 .pic img{
+    height: 120px;
+    width: 120px;
+}
+    
+    .projects .project1 h4{
+        text-align: center;
+    }
+    
+    
+    article section .test{
+        color: #7FFFD4;
+    }
+    
+    article section .testimonialsCont{
+        width: 85%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin-top: 50px;
+    }
+    article section .testimonialsCont .testimonial{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+       
+    }
+    article section .testimonialsCont .testimonial img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    article .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    }
+    
+    article .modal img {
+        margin: auto;
+        display: block;
+        width: 80%; /* Width of the image */
+        max-width: 600px; /* Maximum width */
+        border-radius: 10px; /* Rounded corners */
+        margin-top: 100px;
+    }
+    
+    article .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .chat-box {
+        background-color: transparent;
+        border: 1px solid #626e5b;
+        border-radius: 5px;
+        padding: 0px;
+        width: 50%;
+        height: 400px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    form{
+        width: 90%;
+        height: 100;
+    }
+    
+    .chat-box h2 {
+        margin-top: 0;
+    }
+    
+    .chat-box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .chat-box input, .chat-box textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+    }
+    
+    .chat-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333b2e;
+        color: #DFFFFD;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    
+    .fixed-icons {
+        position: fixed;
+        bottom: 20px; /* Distance from the bottom of the screen */
+        right: 20px; /* Distance from the right side of the screen */
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between icons */
+        z-index: 1000; /* Ensure icons are on top of other elements */
+    }
+    
+    .fixed-icons .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333; /* Dark background for visibility */
+        color: #fff; /* White icon color */
+        text-decoration: none;
+        font-size: 24px; /* Icon size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    }
+    
+    .fixed-icons .icon:hover {
+        background-color: #333b2e; /* Change background color on hover */
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+    }
+    
+    
+    .fixed-icons .whatsapp {
+        background-color: #25D366; /* Green color for WhatsApp */
+    }
+    
+    footer {
+        background-color: #333b2e;/* Dark background color */
+        color: white; /* White text */
+        padding: 20px 0; /* Padding for top and bottom */
+        margin-top: 100px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around; /* Space between left and right content */
+        align-items: flex-start; /* Align items to the start */
+        max-width: 1200px; /* Max width of the footer */
+        margin: 0 auto; /* Center the footer */
+        padding: 0 20px; /* Padding on left and right */
+    }
+    
+    .footer-content,
+    .footer-social {
+        width: 45%; /* Set width for content sections */
+    }
+    
+    .footer-social ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+        display: flex;
+        gap: 20px;
+    }
+    
+    .footer-social li {
+        margin: 10px 0; /* Space between list items */
+    }
+    
+    .footer-social a, i {
+        color: #DFFFFD; /* White text for links */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 20px;
+    }
+    
+    .footer-social a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    .location{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center; /* Center text */
+        padding-top: 10px; /* Padding on top */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --backcol: #555D50;
+    }
+    
+    body{
+        background-color: var(--backcol);
+    }
+    
+    
+    header{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 4px;
+      }
+    header .name{
+        width: 230px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        border: 1px solid;
+        display: none;
+    }
+    header .name h1{
+        font-size: 1.2em;
+        /* font-family: 'Montserrat', sans-serif; */
+        color: #fff;
+        /* color: #20B2AA; */
+        font-weight: 100;
+    }
+    
+    header nav{
+        height: 100%;
+        width: 100%;
+    }
+    
+    header nav ul{
+        border: 1px solid #485341;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        
+    }
+    
+    header nav ul li, a{
+        text-decoration: none;
+        /* color: #20B2AA; */
+        color: #7FFFD4;
+        font-size: 1em;
+        font-weight: 900;
+    }
+    
+    main {
+        margin-top: 30px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    main .mainCont {
+        height: 80%;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    main .mainCont .imgCont{
+        border: 1px solid #626e5b;
+        width: 35%;
+        height: 250px;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    main .mainCont .imgCont img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    main .mainCont .intro{
+        border: 1px solid #626e5b;
+        padding: 10px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        width: 60%;
+    }
+    main .mainCont  .prof{
+        display: none;
+    }
+    main .mainCont .intro p{
+        text-align: center;
+        font-size: 0.7em;
+        color: #DFFFFD;
+    }
+    
+    main .mainCont .intro h1{
+        font-size: 1.9em;
+        color: #7FFFD4;
+        text-align: center;
+        width: 100%;
+    }
+    
+    main .mainCont .intro h3{
+        font-size: 1em;
+        text-align: center;
+        color: #DFFFFD;
+        font-weight: 100;
+    }
+    main .mainCont .intro .buttons{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    main .mainCont .intro .buttons .A{
+        width: 80px;
+        padding: 5px;
+        border-radius: 7px;
+        background-color: transparent;
+        border: 1px solid #7FFFD4;
+    }
+    main .mainCont .intro .buttons .B{
+        width: 80px;
+        padding: 5px;
+        border-radius: 7px;
+        background-color: #7FFFD4;
+        border: none;
+        
+    }
+    main .mainCont .intro .buttons .A a{
+        text-decoration: none;
+    }
+    main .mainCont .intro .buttons .B a{
+        color: var(--backcol);
+    }
+    
+    main .mainCont .intro .socials{
+        border: #56644d 2px solid;
+        width: 80%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    /* Example of icon styling */
+    main .mainCont .intro .socials a i {
+        font-size: 24px;
+        color:#DFFFFD; /* Change to match your design */
+    }
+    
+    main .mainCont .intro .socials a i:hover {
+        color: #7FFFD4; /* Hover effect, e.g., change color */
+    }
+    
+    article{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article .about{
+        width: 80%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 12px;
+    }
+    article .about .get{
+        color: #DFFFFD;
+        font-size: 0.9em;
+    }
+    article .about h1{
+        font-size: 1.8rem;
+        color: #7FFFD4;
+    }
+    article .about .text{
+        color: #DFFFFD;
+        font-size: 0.85em;
+        text-align: start;
+    }
+    article section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    article section .skillsCont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 30px;
+        padding: 5px;
+    
+    }
+    article section h2{
+        font-size: 1.8em;
+        color: #DFFFFD;
+    }
+    article section p{
+        font-size: 0.9em;
+        color: #DFFFFD;
+    }
+    article section .skillsCont .skill{
+        width: 250px;
+        height: 200px;
+        border: 1px solid #626e5b;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: #DFFFFD;
+        font-size: 1em;
+    }
+    article section .skillsCont .skill i{
+        color: #7FFFD4;
+    }
+    article section .skillsCont .skill p{
+        font-size: 0.94em;
+    }
+    article section .skillsCont .skill i:hover{
+        color: #DFFFFD;
+    }
+
+    
+    .projectsCont{
+    height: 70vh;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #7FFFD4;
+}
+ 
+.projects .project1{
+    border: 2px solid #626e5b;
+    background-color: transparent;
+    height: 80%;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.projects .project1 .url{
+    text-decoration: none;
+}
+.projects .project1 .url:hover{
+    text-decoration: underline;
+}
+
+.projects .project1 .pic{
+    background-color: #fff;
+    padding: 40px;
+    height: 80%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .project1 .pic img{
+    height: 100px;
+    width: 100px;
+}
+    
+    .projects .project1 h4{
+        text-align: center;
+    }
+    
+    article section .test{
+        color: #7FFFD4;
+    }
+    
+    article section .testimonialsCont{
+       
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin-top: 50px;
+    }
+    article section .testimonialsCont .testimonial{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+       
+    }
+    article section .testimonialsCont .testimonial img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    article .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    }
+    
+    article .modal img {
+        margin: auto;
+        display: block;
+        width: 80%; /* Width of the image */
+        max-width: 600px; /* Maximum width */
+        border-radius: 10px; /* Rounded corners */
+        margin-top: 100px;
+    }
+    
+    article .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .chat-box {
+        background-color: transparent;
+        border: 1px solid #626e5b;
+        border-radius: 5px;
+        padding: 0px;
+        width: 80%;
+        height: 400px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    form{
+        width: 90%;
+        height: 100;
+    }
+    
+    .chat-box h2 {
+        margin-top: 0;
+    }
+    
+    .chat-box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .chat-box input, .chat-box textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+    }
+    
+    .chat-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333b2e;
+        color: #DFFFFD;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    
+    .fixed-icons {
+        position: fixed;
+        bottom: 20px; /* Distance from the bottom of the screen */
+        right: 20px; /* Distance from the right side of the screen */
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between icons */
+        z-index: 1000; /* Ensure icons are on top of other elements */
+    }
+    
+    .fixed-icons .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333; /* Dark background for visibility */
+        color: #fff; /* White icon color */
+        text-decoration: none;
+        font-size: 24px; /* Icon size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    }
+    
+    .fixed-icons .icon:hover {
+        background-color: #333b2e; /* Change background color on hover */
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+    }
+    
+    
+    .fixed-icons .whatsapp {
+        background-color: #25D366; /* Green color for WhatsApp */
+    }
+    
+    footer {
+        background-color: #333b2e;/* Dark background color */
+        color: white; /* White text */
+        padding: 20px 0; /* Padding for top and bottom */
+        margin-top: 100px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around; /* Space between left and right content */
+        align-items: flex-start; /* Align items to the start */
+        max-width: 100%; /* Max width of the footer */
+        margin: 0 auto; /* Center the footer */
+        padding: 0 10px; /* Padding on left and right */
+    }
+    
+    .footer-content,
+    .footer-social {
+        width: 50%; /* Set width for content sections */
+    }
+    
+    .footer-social ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footer-social li {
+        margin: 10px 0; /* Space between list items */
+    }
+    
+    .footer-social a, i {
+        color: #DFFFFD; /* White text for links */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 20px;
+    }
+    
+    .footer-social a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .location{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center; /* Center text */
+        padding-top: 10px; /* Padding on top */
+    }
+   
+}
+
+@media(max-width: 480px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --backcol: #555D50;
+    }
+    
+    body{
+        background-color: var(--backcol);
+    }
+    
+    
+    header{
+        width: 100%;
+        height: 120px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 7px;
+        display: none;
+
+    }
+    header .name{
+        width: 450px;
+        height: 100%;
+        display: none;
+        align-items: center;
+        padding: 5px;
+
+    }
+    header .name h1{
+        font-size: 2em;
+        /* font-family: 'Montserrat', sans-serif; */
+        color: #fff;
+        /* color: #20B2AA; */
+        font-weight: 100;
+    }
+    
+    header nav{
+        height: 100%;
+        width: 60%;
+        display: none;
+    }
+    
+    header nav ul{
+        border: 1px solid #485341;
+        list-style: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        display: none;
+        
+    }
+    
+    header nav ul li, a{
+        text-decoration: none;
+        /* color: #20B2AA; */
+        color: #7FFFD4;
+        font-size: 1em;
+        font-weight: 900;
+    }
+    
+    main {
+        margin-top: 0px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+    
+    main .mainCont {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    main .mainCont .imgCont{
+        border: 1px solid transparent;
+        width: 100%;
+        height: 65%;
+        border-radius: 0px;
+        background-color: #626e5b;
+        position: absolute;
+        top: 0;
+        z-index: -5;
+        border: none;
+    }
+    main .mainCont  .prof{
+        border: none;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 3%;
+        left: 69%;
+        width: 100px;
+        background-color:  rgba(0, 0, 0, 0.2);
+        padding: 4px;
+        border-radius: 10px;
+    }
+    main .mainCont  .prof a{
+        text-align: center;
+    }
+    main .mainCont .imgCont img{
+        height: 100%;
+        width: 95%;
+        border-radius: 0px;
+        margin-left: 2.5%;
+    }
+
+    
+    main .mainCont .intro{
+        padding: 10px;
+        padding-top: 30px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        background-color: var(--backcol);
+        width: 100%;
+        height: 22em;
+        margin-top: 23em;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+    main .mainCont .intro p{
+        text-align: center;
+        font-size: 0.9em;
+        color: #DFFFFD;
+    }
+    
+    main .mainCont .intro h1{
+        font-size: 1.3em;
+        color: #7FFFD4;
+        text-align: center;
+        width: 13em;
+    }
+    
+    main .mainCont .intro h3{
+        font-size: 1em;
+        text-align: center;
+        color: #DFFFFD;
+        font-weight: 100;
+    }
+    main .mainCont .intro .buttons{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    main .mainCont .intro .buttons .A{
+        width: 100px;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #7FFFD4;
+    }
+    main .mainCont .intro .buttons .B{
+        width: 100px;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: #7FFFD4;
+        border: none;
+        font-size: 12px;
+        
+    }
+    main .mainCont .intro .buttons .A a{
+        text-decoration: none;
+    }
+    main .mainCont .intro .buttons .B a{
+        color: var(--backcol);
+    }
+    
+    main .mainCont .intro .socials{
+        border: #56644d 2px solid;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    /* Example of icon styling */
+    main .mainCont .intro .socials a i {
+        font-size: 30px;
+        color:#DFFFFD; /* Change to match your design */
+    }
+    
+    main .mainCont .intro .socials a i:hover {
+        color: #7FFFD4; /* Hover effect, e.g., change color */
+    }
+    
+    article{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article .about{
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 0px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+    article .about .get{
+        color: #DFFFFD;
+        font-size: 0.5em;
+    }
+    article .about h1{
+        font-size: 2em;
+        color: #7FFFD4;
+    }
+    article .about .text{
+        color: #DFFFFD;
+        font-size: 0.85em;
+        text-align: start;
+    }
+    article section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 100%;
+        margin-top: 20px;
+        padding-top: 30px;
+        border: 1px solid #485341;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    article section .skillsCont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    
+    }
+    article section h2{
+        font-size: 1.7em;
+        color: #DFFFFD;
+    }
+    article section p{
+        font-size: 0.6em;
+        color: #DFFFFD;
+    }
+    article section .skillsCont .skill{
+        width: 17em;
+        height: 15em;
+        border: 1px solid #626e5b;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: #DFFFFD;
+        font-size: 1em;
+        margin-bottom:50px;
+    }
+    article section .skillsCont .skill i{
+        color: #7FFFD4;
+    }
+    article section .skillsCont .skill p{
+        font-size: 1em;
+    }
+    article section .skillsCont .skill i:hover{
+        color: #DFFFFD;
+    }
+
+     .projectsCont{
+    height: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #7FFFD4;
+}
+ 
+.projects .project1{
+    border: 2px solid #626e5b;
+    background-color: transparent;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+.projects .project1 .url{
+    text-decoration: none;
+}
+.projects .project1 .url:hover{
+    text-decoration: underline;
+}
+
+.projects .project1 .pic{
+    background-color: #fff;
+    padding: 40px;
+    height: 90%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .project1 .pic img{
+    height: 100px;
+    width: 100px;
+}
+    
+    .projects .project1 h4{
+        text-align: center;
+    }
+    
+    article section .test{
+        color: #7FFFD4;
+    }
+    #testimonials{
+        height: 650px;
+    }
+    #testimonials .T{
+        font-size: 0.9em;
+        text-align: center;
+    }
+    article section .testimonialsCont{
+       
+        width: 85%;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        border: 1px none;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+    article section .testimonialsCont .testimonial{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+       
+    }
+    article section .testimonialsCont .testimonial img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    article .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    }
+    
+    article .modal img {
+        margin: auto;
+        display: block;
+        width: 80%; /* Width of the image */
+        max-width: 600px; /* Maximum width */
+        border-radius: 10px; /* Rounded corners */
+        margin-top: 100px;
+    }
+    
+    article .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .chat-box {
+        background-color: transparent;
+        border: 1px solid #626e5b;
+        border-radius: 5px;
+        padding: 0px;
+        width: 85%;
+        height: 400px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    form{
+        width: 90%;
+        height: 100;
+    }
+    
+    .chat-box h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+    
+    .chat-box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .chat-box input, .chat-box textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 5px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    
+    .chat-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333b2e;
+        color: #DFFFFD;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    
+    .fixed-icons {
+        position: fixed;
+        bottom: 20px; /* Distance from the bottom of the screen */
+        right: 20px; /* Distance from the right side of the screen */
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between icons */
+        z-index: 1000; /* Ensure icons are on top of other elements */
+    }
+    
+    .fixed-icons .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333; /* Dark background for visibility */
+        color: #fff; /* White icon color */
+        text-decoration: none;
+        font-size: 24px; /* Icon size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    }
+    
+    .fixed-icons .icon:hover {
+        background-color: #333b2e; /* Change background color on hover */
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+        display: flex;
+    }
+    
+    
+    .fixed-icons .whatsapp {
+        background-color: #25D366; /* Green color for WhatsApp */
+    }
+    
+    footer {
+        background-color: #333b2e;/* Dark background color */
+        color: white; /* White text */
+        padding: 20px 0; /* Padding for top and bottom */
+        margin-top: 100px;
+        width: 100%;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px ;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* Space between left and right content */
+        align-items: flex-start; /* Align items to the start */
+        max-width: 100%; /* Max width of the footer */
+        height: 300px;
+        margin: 0 auto; /* Center the footer */
+        padding:  20px; /* Padding on left and right */
+    }
+    
+    .footer-content,
+    .footer-social {
+        width: 100%; /* Set width for content sections */
+    }
+    
+    .footer-social ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+        display: flex;
+        gap: 20px;
+    }
+    
+    .footer-social li {
+        margin: 10px 0; /* Space between list items */
+    }
+    
+    .footer-social a, i {
+        color: #DFFFFD; /* White text for links */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 15px;
+    }
+    
+    .footer-social a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .location{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center; /* Center text */
+        padding-top: 10px; /* Padding on top */
+        font-size: 12px;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}
